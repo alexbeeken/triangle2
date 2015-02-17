@@ -35,11 +35,11 @@ $(document).ready(function() {
 
     if (newTriangle !== null) {
       if (newTriangle.type === "Equilateral") {
-        $("ul#listEquilateral").append("<li>" + sideA + ", " + sideB + ", " + sideC + "</li>");
+        $("#listEquilateral").append("<li>" + newTriangle.sideA + ", " + newTriangle.sideB + ", " + newTriangle.sideC + "</li>");
       } else if (newTriangle.type === "Isosceles"){
-        $("ul#listIsosceles").append("<li>" + sideA + ", " + sideB + ", " + sideC + "</li>");
+        $("#listIsosceles").append("<li>" + newTriangle.sideA + ", " + newTriangle.sideB + ", " + newTriangle.sideC + "</li>");
       } else if (newTriangle.type === "Scalene"){
-        $("ul#listScalene").append("<li>" + sideA + ", " + sideB + ", " + sideC + "</li>");
+        $("#listScalene").append("<li>" + newTriangle.sideA + ", " + newTriangle.sideB + ", " + newTriangle.sideC + "</li>");
       }
     }
     event.preventDefault();
