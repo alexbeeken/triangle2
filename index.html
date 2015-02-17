@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="./js/scripts.js"></script>
+    <title>Triangle Tracker</title>
+  </head>
+  <body>
+
+    <div class='container'>
+
+      <h1>Triangle Tracker</h1>
+
+      <div class="rows">
+
+        <div id = "newTriangle" class="col-md-3">
+          <h3>Create a New Triangle!</h3>
+          <form id="triangleForm">
+            <label for="sideA">Side 1 Length</label>
+            <input type="text" id="sideA" required>
+            <label for="sideB">Side 2 Length</label>
+            <input type="text" id="sideB" required>
+            <label for="sideC">Side 3 Length</label>
+            <input type="text" id="sideC" required>
+            <button type="submit">Triangulate</button>
+          </form>
+        </div>
+
+        <div id = "listScalene" class="col-md-3">
+          <h3>Scalene</h3>
+          <ul>
+          </ul>
+        </div>
+
+        <div id = "listIsosceles" class="col-md-3">
+          <h3>Isosceles</h3>
+          <ul>
+          </ul>
+        </div>
+
+        <div id = "listEquilateral" class="col-md-3">
+          <h3>Equilateral</h3>
+          <ul>
+          </ul>
+        </div>
+
+    </div>
+  </body>
+</html>
